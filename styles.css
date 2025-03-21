@@ -119,35 +119,41 @@ body::after {
   #logoutBtn i, #deleteAccountBtn i {
     font-size: 24px;
   }
-  
-  .message-input-container {
+  .message-input-container, 
+#messageInput {
     flex: 1;
-    padding: 15px;
-    margin-right: 10px;
+    padding: 14px 18px; /* Better padding for comfort */
     border: none;
-    border-radius: 20px;
+    border-radius: 22px; /* Slightly more rounded for a modern look */
     background: #2a2a2a;
     color: #e0e0e0;
-    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
     font-size: 16px;
-  }
-  
-  #messageInput {
-    flex: 1;
-    padding: 15px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 20px;
-    background: #2a2a2a;
-    color: #e0e0e0;
-    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
-    font-size: 16px;
-  }
-  
-  #messageInput:focus {
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.4); /* Deeper shadow for depth */
+    transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#messageInput:focus {
     outline: none;
-    background: #333333;
-  }
+    background: #3a3a3a; /* Slightly lighter to indicate focus */
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.5); /* Stronger inset shadow for depth */
+}
+
+/* Optional: Placeholder styling for better visibility */
+#messageInput::placeholder {
+    color: #b0b0b0;
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+/* Optional: Mobile-friendly adjustments */
+@media (max-width: 600px) {
+    .message-input-container, 
+    #messageInput {
+        font-size: 14px;
+        padding: 12px 16px;
+    }
+}
+
   
   #sendBtn {
     background: none;
