@@ -25,7 +25,7 @@
     left: 0;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle at center, #0A3463, #121212, #000000);
+    background: radial-gradient(circle at center, #05122D, #121212, #000000);
     background-size: 400% 400%;
     animation: background-animation 20s infinite alternate ease-in-out;
     z-index: -1;
