@@ -133,128 +133,114 @@ body::after {
     box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
     font-size: 16px;
   }
-  
-  #messageInput:focus {
-    outline: none;
-    background: #333333;
-  }
-  
-  #sendBtn {
-    background: none;
-    border: none;
-    color: #28a745;
-    max-width: 50px;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  #sendBtn:hover {
-    color: #218838;
-  }
-  
-  #sendBtn i {
-    font-size: 24px;
-  }
-  
+  /* Input Field Styling */
+#messageInput {
+  background: #2a2a2a;
+  color: #e0e0e0;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  transition: background 0.3s ease;
+}
 
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-family: "Roboto", "Nunito", sans-serif;
-    font-weight: bold;
-    color: #ffffff;
-  }
-  
-  input, button {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    font-family: "Inter", sans-serif;
-  }
-  
-  input {
-    background: #2a2a2a;
-    color: #e0e0e0;
-    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
-  }
-  
-  input:focus {
-    outline: none;
-    background: #333333;
-  }
-  
-  button {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #ffffff;
-  }
-  
-  button {
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #loginBtn {
-    background: linear-gradient(145deg, #007bff, #0056b3); 
-  }
-  
-  #loginBtn:hover {
-    background: linear-gradient(145deg, #0056b3, #004085);
-    transform: scale(1.05);
-  }
-  
-  #signupBtn {
-    background: linear-gradient(145deg, #fd7e14, #e65100); 
-  }
-  
-  #signupBtn:hover {
-    background: linear-gradient(145deg, #e65100, #cc5200);
-    transform: scale(1.05);
-  }
-  
-  #menu button {
-    background: linear-gradient(145deg, #6c757d, #495057); 
-  }
-  
-  #menu button:hover {
-    background: linear-gradient(145deg, #495057, #343a40);
-    transform: scale(1.05);
-  }
-  
-  #backToMenuFromJoin, #backToMenuFromJoin {
-    background: linear-gradient(145deg, #6c757d, #495057); 
-  }
-  
-  #backToMenuFromJoin:hover, #backToMenuFromJoin:hover {
-    background: linear-gradient(145deg, #495057, #343a40);
-    transform: scale(1.05);
-  }
-  #backToMenuFromCreate, #backToMenuFromJoin {
-    background: linear-gradient(145deg, #6c757d, #495057); 
-  }
-  
-  #backToMenuFromCreate:hover, #backToMenuFromJoin:hover {
-    background: linear-gradient(145deg, #495057, #343a40);
-    transform: scale(1.05);
-  }
-  #joinPartySubmitBtn {
-    background: linear-gradient(145deg, #28a745, #218838); 
-  }
-  
-  #joinPartySubmitBtn:hover {
-    background: linear-gradient(145deg, #218838, #1e7e34);
-    transform: scale(1.05);
-  }
+#messageInput:focus {
+  outline: none;
+  background: #333333;
+}
+
+/* Send Button */
+#sendBtn {
+  background: none;
+  border: none;
+  color: #28a745;
+  font-size: 24px;
+  max-width: 50px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#sendBtn:hover {
+  color: #218838;
+}
+
+#sendBtn i {
+  font-size: 24px;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-family: "Roboto", "Nunito", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Common Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button Variants */
+#loginBtn {
+  background: linear-gradient(145deg, #007bff, #0056b3);
+}
+
+#signupBtn {
+  background: linear-gradient(145deg, #fd7e14, #e65100);
+}
+
+#joinPartySubmitBtn {
+  background: linear-gradient(145deg, #28a745, #218838);
+}
+
+#menu button,
+#backToMenuFromCreate,
+#backToMenuFromJoin {
+  background: linear-gradient(145deg, #6c757d, #495057);
+}
+
+/* Hover Effects */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#loginBtn:hover {
+  background: linear-gradient(145deg, #0056b3, #004085);
+}
+
+#signupBtn:hover {
+  background: linear-gradient(145deg, #e65100, #cc5200);
+}
+
+#joinPartySubmitBtn:hover {
+  background: linear-gradient(145deg, #218838, #1e7e34);
+}
+
+#menu button:hover,
+#backToMenuFromCreate:hover,
+#backToMenuFromJoin:hover {
+  background: linear-gradient(145deg, #495057, #343a40);
+}
+
   
   #leavePartyBtn {
     background-color: #f44336; 
