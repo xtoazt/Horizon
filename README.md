@@ -1,1 +1,1 @@
-A fully static chat room out of html js and css
+A Static Chat Room For School Students
